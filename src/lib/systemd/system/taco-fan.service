@@ -1,0 +1,12 @@
+[Unit]
+Description=Taco Fan
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /usr/bin/taco-fan.py
+Restart=on-failure
+RestartSec=1s
+WorkingDirectory=/usr/bin
+
+[Install]
+WantedBy=multi-user.target

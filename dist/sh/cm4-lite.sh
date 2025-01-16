@@ -6,7 +6,7 @@ DISTRO=`cat /etc/os-release | grep ^ID= | sed -e 's/ID\=//g'`
 #
 # taco-fan install script
 #
-DEB_URL='https://raw.githubusercontent.com/radxa/taco/master/taco-fan-0.1.deb'
+DEB_URL='https://github.com/radxa/taco/raw/refs/heads/master/dist/deb/taco-fan-${VERSION}.deb'
 
 confirm() {
   printf "%s [Y/n] " "$1"
